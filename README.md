@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ClinicTech
 
-## Getting Started
+**Live site: https://anish-mehta76.github.io/clinictech-site/**
 
-First, run the development server:
+A tech partner for small clinics: websites, language access, and insurance and benefits help. Our work is free for clinics.
+
+## Pages
+
+| Page | Live link |
+|---|---|
+| Home | https://anish-mehta76.github.io/clinictech-site/ |
+| Roadmap storyboard | https://anish-mehta76.github.io/clinictech-site/roadmap/ |
+| Services | https://anish-mehta76.github.io/clinictech-site/services/ |
+| Our Work | https://anish-mehta76.github.io/clinictech-site/work/ |
+| About | https://anish-mehta76.github.io/clinictech-site/about/ |
+| FAQ | https://anish-mehta76.github.io/clinictech-site/faq/ |
+| Request a Project | https://anish-mehta76.github.io/clinictech-site/request/ |
+
+## Run it locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploys
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Every push to `main` builds a static export and publishes it to GitHub Pages (`.github/workflows/pages.yml`).
 
-## Learn More
+The request form sends to Formspree. Set the form ID as the Actions variable `NEXT_PUBLIC_FORMSPREE_ID` (Settings → Secrets and variables → Actions → Variables), or in `.env.local` for local runs. See `.env.example`.
 
-To learn more about Next.js, take a look at the following resources:
+## Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 15 (App Router, static export), React 19, Tailwind CSS v4, GSAP + Lenis on the roadmap page, lucide-react icons.
